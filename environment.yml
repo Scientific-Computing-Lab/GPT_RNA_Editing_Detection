@@ -1,0 +1,17 @@
+name: rna_editing
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - biopython
+  - pybedtools
+  - openmp
+  - pip
+  - pip:
+    - torch
+    - ViennaRNA
+    - transformers
+    - git+https://github.com/Arty40m/AliNA.git

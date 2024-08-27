@@ -298,7 +298,7 @@ if __name__ == '__main__':
 
 
     parser = argparse.ArgumentParser(formatter_class=MyFormatter,
-                                     description='Creating a dataset of secondary structures of editing sites  and augmentation.')
+                                     description='Creating a dataset of secondary structures of editing sites.')
     parser.add_argument('--pair_region', '--pair_region', dest="pair_region", help='A bed file that contains both alu (chr1,start1,end1,chr2,start2,end2,strand)', type=str,required=True)
     parser.add_argument('--output_dir', '--output_dir', dest="output_dir", help='dir for the output file (csv)', type=str,required=True)
     parser.add_argument('--editing_site_plus', '--editing_site_plus', dest="editing_site_plus", help='A file that contains data on the levels of editing in adenosines in the positive strand', type=str,required=True)

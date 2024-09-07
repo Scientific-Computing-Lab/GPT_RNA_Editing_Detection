@@ -141,7 +141,7 @@ Below is an illustration showing the performance of fine-tuned GPT-3.5 models in
 
 ![train_valid_trends (1)](https://github.com/user-attachments/assets/a91cbcc4-04c7-4105-890c-2f70d2e454bc)
 
-To generate this illustration, navigate to the figure/fig5 directory and run the provided scripts:
+To generate this illustration, navigate to the figure/Training_Validation_Performance directory and run the provided scripts:
 
 ```
 python Training_Validation_Performance_Plot.py <Generation.csv> <Classification-PARTIAL.csv> <Classification-FULL.csv>
@@ -153,14 +153,37 @@ The following illustration depicts the threshold adjustment process, which optim
 
 ![Threshold Adjustment (1)](https://github.com/user-attachments/assets/e0e06963-96d4-4d30-aeee-b7f18a95ca47)
 
-To create this illustration, navigate to the figure/fig4 directory and run the provided scripts:
+To create this illustration, navigate to the figure/Threshold_Optimization directory and run the provided scripts:
 
 ```
 python Threshold_Optimization_Visualization.py <input_file.csv>
 ```
 - <input_file>:
-   - full context -  figure/fig4/full_context.txt
-   - partial context - figure/fig4/partial_context.txt
+   - full context -  figure/Threshold_Optimization/full_context.txt
+   - partial context - figure/Threshold_Optimization/partial_context.txt
 
+## Tissue-Specific Analysis
 
+In this part of our study, we conducted tissue-specific analysis to investigate potential differences in RNA editing patterns based on varying ADAR expression levels across tissues. This analysis covers six tissues, each with distinct ADAR and RNA-binding protein profiles: Muscle Skeletal, Whole Blood, Artery Tibial, Brain Cerebellum, Esophagus Muscularis and Brain Spinal Cord.
 
+For each tissue, we generated and analyzed RNA editing patterns and used classification-based models to predict whether adenosines were edited or not. The tissue-specific visualization graph illustrates the threshold optimization for each tissue.
+
+![image](https://github.com/user-attachments/assets/43695c23-c9bb-4716-a5c2-383766b20ccc)
+
+To replicate this analysis for a specific tissue, navigate to the figure/Tissue_Specific_Analysis directory and run the provided scripts:
+
+```
+python Threshold_Optimization_Tissues_Visualization.py <{TissueName}\{TissueName}_Thresholds.txt>
+```
+
+For example, to visualize Brain Cerebellum analysis:
+```
+python Threshold_Optimization_Tissues_Visualization.py BrainCerebellum\BrainCerebellum_Thresholds.txt
+```
+
+1. <Tissue>_Training: Contains training statistics for each tissue.
+2. <Tissue>_Thresholds: Contains threshold data used for illustrates the threshold optimization for each tissue.
+3. <Tissue>_output_meta_stats: Metadata statistics of the analysis for each tissue.
+4. <Tissue>.png: Graphical representation of threshold adjustments.
+
+The visualization script takes the threshold data as input and produces the tissue-specific plot demonstrating the effect of threshold adjustments.

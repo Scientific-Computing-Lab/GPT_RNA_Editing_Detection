@@ -181,9 +181,9 @@ For example, to visualize Brain Cerebellum analysis:
 python Threshold_Optimization_Tissues_Visualization.py BrainCerebellum\BrainCerebellum_Thresholds.txt
 ```
 
-1. <Tissue>_Training: Contains training statistics for each tissue.
-2. <Tissue>_Thresholds: Contains threshold data used for illustrates the threshold optimization for each tissue.
-3. <Tissue>_output_meta_stats: Metadata statistics of the analysis for each tissue.
-4. <Tissue>.png: Graphical representation of threshold adjustments.
+1. {TissueName}_Training: Contains training statistics for each tissue.
+2. {TissueName}_Thresholds: Contains threshold data used for illustrates the threshold optimization for each tissue.
+3. {TissueName}_output_meta_stats: Metadata statistics of the analysis for each tissue.
+4. {TissueName}.png: Graphical representation of threshold adjustments.
 
 The visualization script takes the threshold data as input and produces the tissue-specific plot demonstrating the effect of threshold adjustments.

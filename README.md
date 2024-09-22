@@ -25,11 +25,7 @@ This repository contains the code and data associated with our NeurIPS 2024 subm
 ## Getting Started
 ### Requirments
 
-First, clone the code provided here.
-
-```
-clone  https://github.com/Scientific-Computing-Lab/GPT_RNA_Editing_Detection.git
-```
+First, clone this repository. 
 
 You may use the file  `environment.yml` to create anaconda environment (python 3.8) with the required packages.
 

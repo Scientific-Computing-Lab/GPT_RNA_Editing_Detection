@@ -55,10 +55,10 @@ def get_reverse_complement(string_seq):
 
 
 
-def get_seq(chr1,start1,end1,chr2,start2,end2,strand,gr):
+def get_seq(chr1,start1,end1,chr2,start2,end2,strand,gr,ds_link):
     side1 = gr.get_fasta(chr1,start1,end1)
     side2 = gr.get_fasta(chr2,start2,end2)
-    seq = side1 + "NNNNNNNNNN" + side2
+    seq = side1 + ds_link + side2
     seq = seq.upper()
     if strand == "-" :
          seq = get_reverse_complement(seq)
@@ -321,7 +321,7 @@ if __name__ == '__main__':
     for index, row in alu_region.iterrows():
         chr1, start1, end1, chr2, start2, end2, strand = row
 
-        seq = get_seq(chr1,start1,end1,chr2,start2,end2,strand,gr)
+        seq = get_seq(chr1,start1,end1,chr2,start2,end2,strand,gr,ds_link)
         fc = RNA.fold_compound(seq)
         # compute MFE and MFE structure
         (mfe_struct, mfe) = fc.mfe()

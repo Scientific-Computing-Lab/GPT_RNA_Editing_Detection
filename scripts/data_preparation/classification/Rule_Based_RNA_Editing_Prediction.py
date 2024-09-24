@@ -105,7 +105,6 @@ def check_editing_site(structure, L, R):
         pair_list = d.get('loop_pairs', [])
         for idx, num in enumerate(loop_index_list):
             if num == central_A_index-1:
-                #pair_base = 'C'
                 if len(pair_list) == 0:
                     pair_base = ''
                     break

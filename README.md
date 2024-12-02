@@ -67,6 +67,7 @@ python RNA_Structure_Data_Creation_Augmentation.py  [-h] --pair_region PAIR_REGI
                       MAX_PERCENT_CHANGE --structural_identity PERCENT_STRUCTURAL_IDENTITY
                       --method method
 ```
+* Example input files for the script can be found in the scripts/generation/input_samples folder
 After running the creation and augmentation script, prepare the data for model input. This step converts the sequences into a format suitable for the model.
 Run the preparation script:
 ```

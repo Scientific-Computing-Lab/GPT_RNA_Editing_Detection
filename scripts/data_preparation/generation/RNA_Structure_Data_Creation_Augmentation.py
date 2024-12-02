@@ -229,7 +229,7 @@ def process_row( row,gr,A_pos_A2G_file,A_pos_T2C_file,editing_level,distance,per
         percentage_change = random.randint(min_percent_change, max_percent_change)
         augment_dbn_data, percentage_identity = augment_data_func(dbn_data, pairs, all_A_data, editing_level, distance, percentage_change, method, percent_structural_identity)
         while percentage_identity < percent_structural_identity:
-            augment_dbn_data, percentage_identity = augment_data_func(dbn_data, pairs, all_A_data, editing_level, distance, percentage_change, method, percent_structural_identity, fr)
+            augment_dbn_data, percentage_identity = augment_data_func(dbn_data, pairs, all_A_data, editing_level, distance, percentage_change, method, percent_structural_identity)
         predicate_editing_site = "'"
         for i, base in enumerate(augment_dbn_data[1]):
             if base != "A":

@@ -50,8 +50,6 @@ Data preparation differs depending on whether you are focusing on generation or 
 
 ![methodology](https://github.com/user-attachments/assets/baa19f96-3e4b-44b8-8c44-0825420783de)
 
-https://github-production-user-asset-6210df.s3.amazonaws.com/104351971/356295488-baa19f96-3e4b-44b8-8c44-0825420783de.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241202%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241202T170359Z&X-Amz-Expires=300&X-Amz-Signature=e9176a94e972884f158bd1d631e181c98d83161984fa46e64cbc32ae9afad550&X-Amz-SignedHeaders=host
-
 ### 1. Generation
    
 For the generation task, data preparation involves augmenting the sequences and then preparing them for model input.

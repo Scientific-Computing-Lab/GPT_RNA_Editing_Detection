@@ -48,7 +48,9 @@ conda activate rna_editing
 
 Data preparation differs depending on whether you are focusing on generation or classification tasks.
 
-![methodology](https://github.com/user-attachments/assets/baa19f96-3e4b-44b8-8c44-0825420783de)
+![methodology](https://github.com/Scientific-Computing-Lab/GPT_RNA_Editing_Detection/blob/main/images/image.png)
+
+
 
 ### 1. Generation
    

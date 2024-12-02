@@ -173,7 +173,7 @@ In this part of our study, we conducted tissue-specific analysis to investigate 
 
 For each tissue, we generated and analyzed RNA editing patterns and used classification-based models to predict whether adenosines were edited or not. The tissue-specific visualization graph illustrates the threshold optimization for each tissue.
 
-![image]https://github.com/Scientific-Computing-Lab/GPT_RNA_Editing_Detection/blob/main/images/image.png()
+![image](https://github.com/Scientific-Computing-Lab/GPT_RNA_Editing_Detection/blob/main/images/image.png)
 
 To replicate this analysis for a specific tissue, navigate to the figure/Tissue_Specific_Analysis directory and run the provided scripts:
 

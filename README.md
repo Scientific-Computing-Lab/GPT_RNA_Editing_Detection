@@ -50,7 +50,6 @@ Data preparation differs depending on whether you are focusing on generation or 
 
 ![methodology](https://github.com/user-attachments/assets/baa19f96-3e4b-44b8-8c44-0825420783de)
 
-
 ### 1. Generation
    
 For the generation task, data preparation involves augmenting the sequences and then preparing them for model input.
